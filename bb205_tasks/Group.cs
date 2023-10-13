@@ -16,10 +16,12 @@
             }
         }
         public int StudentLimit { get; set; }
-        Student[] Students;
+        public Student[] Students;
 
-        public Group()
+        public Group(string no,int limit)
         {
+            No = no;
+            StudentLimit = limit;
             Students = new Student[0];
         }
         public void AddStudent(Student student)
